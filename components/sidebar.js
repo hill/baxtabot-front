@@ -7,44 +7,44 @@ export default () => (
   <div className="sidebar">
     <aside className='menu'>
       <div className="logo">
-        <Link href="/">
+        <Link route="/">
           <img src="../static/logo.svg"/>
         </Link>
       </div>
       <p className='menu-label'>Functions</p>
       <ul className='menu-list'>
         <li>
-          <ActiveLink activeClassName='is-active' href="/dino">
+          <ActiveLink activeClassName='is-active' route="/dino">
             <a>Dino</a>
           </ActiveLink>
         </li>
         <li>
-          <ActiveLink activeClassName='is-active' href="/jd">
+          <ActiveLink activeClassName='is-active' route="/jd">
             <a>J&amp;D</a>
           </ActiveLink>
         </li>
         <li>
-          <ActiveLink activeClassName='is-active' href="/shop">
+          <ActiveLink activeClassName='is-active' route="/shop">
             <a>Shop</a>
           </ActiveLink>
         </li>
         <li>
-          <ActiveLink activeClassName='is-active' href="/busses">
+          <ActiveLink activeClassName='is-active' route="/busses">
             <a>Bus Times</a>
           </ActiveLink>
         </li>
         <li>
-          <ActiveLink activeClassName='is-active' href="/groups">
+          <ActiveLink activeClassName='is-active' route="/groups">
             <a>Group Allocate</a>
           </ActiveLink>
         </li>
         <li>
-          <ActiveLink activeClassName='is-active' href="/coffee">
+          <ActiveLink activeClassName='is-active' route="/coffee">
             <a>Coffee Night</a>
           </ActiveLink>
         </li>
         <li>
-          <ActiveLink activeClassName='is-active' href="/notify">
+          <ActiveLink activeClassName='is-active' route="/notify">
             <a>Big Notify!</a>
           </ActiveLink>
         </li>
@@ -52,12 +52,12 @@ export default () => (
       <p className='menu-label'>Administration</p>
       <ul className='menu-list'>
         <li>
-          <ActiveLink activeClassName='is-active' href="/residents">
+          <ActiveLink activeClassName='is-active' route="/residents">
             <a>Residents</a>
           </ActiveLink>
         </li>
         <li>
-          <ActiveLink activeClassName='is-active' href="/users">
+          <ActiveLink activeClassName='is-active' route="/users">
             <a>Users</a>
           </ActiveLink>
         </li>
@@ -71,7 +71,7 @@ export default () => (
       <p className='menu-label'>About</p>
       <ul className='menu-list'>
         <li>
-          <ActiveLink activeClassName='is-active' href="/docs">
+          <ActiveLink activeClassName='is-active' route="/docs">
             <a>Documentation</a>
           </ActiveLink>
         </li>

@@ -1,13 +1,13 @@
 {
-  "name": "next-with-bulma",
-  "version": "1.0.0",
-  "description": "Trying out Next.js",
+  "name": "bbotfront",
+  "version": "0.0.1",
+  "description": "React frontend for Baxtabot",
   "scripts": {
-    "dev": "next",
+    "dev": "node server.js",
     "build": "next build",
-    "start": "next start"
+    "start": "NODE_ENV=production node server.js"
   },
-  "author": "Jake Varness",
+  "author": "Tom Hill",
   "license": "MIT",
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.6.3",
@@ -15,8 +15,10 @@
     "@zeit/next-css": "^1.0.1",
     "@zeit/next-sass": "^1.0.1",
     "bulma": "^0.7.2",
+    "express": "^4.16.4",
     "moment": "^2.23.0",
     "next": "^7.0.2",
+    "next-routes": "^1.4.2",
     "node-sass": "^4.10.0",
     "react": "^16.6.3",
     "react-dom": "^16.6.3",

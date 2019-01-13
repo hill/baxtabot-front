@@ -1,12 +1,13 @@
 import { withRouter } from 'next/router'
-import Link from 'next/link'
+// import Link from 'next/link'
+import {Link} from '../routes'
 import React, { Children } from 'react'
 
 const ActiveLink = ({ router, children, ...props }) => {
   const child = Children.only(children)
 
   let className = child.props.className || null
-  if (router.pathname === props.href && props.activeClassName) {
+  if (router.pathname === props.route && props.activeClassName) {
     className = `${className !== null ? className : ''} ${props.activeClassName}`.trim()
   }
 
