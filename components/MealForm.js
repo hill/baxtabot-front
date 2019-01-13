@@ -1,6 +1,9 @@
 import React from 'react'
 import moment from 'moment'
 
+import { toast } from 'react-toastify';
+
+
 function Submit (props) {
   return (
     <div className='field is-grouped'>
@@ -304,6 +307,7 @@ export default class extends React.Component {
       this.props.addedMeal(meal)
     })
     this.setState({ currentForm: 'none' })
+    toast.success(`Added ${meals.length} meals`)
   }
 
   render () {

@@ -2,6 +2,8 @@ import React from 'react'
 import Layout from '../components/layout'
 import MealForm from '../components/MealForm'
 
+import { toast } from 'react-toastify';
+
 export default class extends React.Component {
   state = {
     meals: [
@@ -29,6 +31,8 @@ export default class extends React.Component {
     state.meals.splice(index, 1)
     // Make a DELETE request here
     this.setState(state)
+
+    toast.warn("Deleted a meal", { autoClose: 1500 })
   }
 
   render () {

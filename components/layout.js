@@ -5,6 +5,9 @@ import '../styles/styles.scss'
 import ScriptTag from 'react-script-tag';
 import Sidebar from './sidebar.js'
 
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 export default ({ children }) => {
 
   return (
@@ -31,6 +34,7 @@ export default ({ children }) => {
           </div> */}
         </div>
       </div>
+      <ToastContainer />
     </div>
   )
 }
