@@ -20,7 +20,7 @@ export default ({ children }) => {
         </div>
         <div className="column is-10s">
           {children}
-          <div id="fb-root"></div>
+          {/* <div id="fb-root"></div>
 
           <ScriptTag src="/static/fb_message.js" />
 
@@ -28,7 +28,7 @@ export default ({ children }) => {
             page_id="223019795042891"
             logged_in_greeting="Hi!"
             logged_out_greeting="Hi!">
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
