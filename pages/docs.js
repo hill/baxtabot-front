@@ -9,6 +9,9 @@ export default () => (
         <p>TBH the whole codebase is a mess. I made this when I was quite intoxicated one solemn thursday evening.</p>
         <p>There was no foresight.</p>
         <p>Don't judge me.</p>
+        <h2 className="title is-4">Code Organisation</h2>
+        <h3 className="title is-5">Front End</h3>
+        <h3 className="title is-5">Back End</h3>
     </section>
   </Layout>
 );

@@ -19,13 +19,8 @@ export default () => (
           </ActiveLink>
         </li>
         <li>
-          <ActiveLink activeClassName='is-active' route="/jd">
-            <a>J&amp;D</a>
-          </ActiveLink>
-        </li>
-        <li>
-          <ActiveLink activeClassName='is-active' route="/shop">
-            <a>Shop</a>
+          <ActiveLink activeClassName='is-active' route="/switches">
+            <a>Switches</a>
           </ActiveLink>
         </li>
         <li>
@@ -79,6 +74,9 @@ export default () => (
           <a>Credits</a>
         </li>
       </ul>
+      <div className="bottom">
+        <p>Talk to BaxtaBot</p>
+      </div>
     </aside>
   </div>
 )

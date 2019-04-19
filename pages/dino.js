@@ -18,8 +18,27 @@ export default class extends React.Component {
     ]
   }
 
+  componentDidMount() {
+    // Get meals from api and add to state
+    fetch('http://localhost:5000/api/dino')
+    .then(res => {
+      return res.json()
+    })
+    .then(data => {
+      console.log(data)
+      this.setState({meals: data.meals})
+    })
+  }
+
   addMeal = meal => {
-    this.setState(prevState => ({ meals: [...prevState.meals, meal] }))
+    fetch('http://localhost:5000/api/dino', {
+      method: 'post',
+      body: JSON.stringify(meal)
+    })
+    .then(res => {
+      this.setState(prevState => ({ meals: [...prevState.meals, meal] }))
+      toast.success("Added a meal!", { autoClose: 1500 })
+    })
   }
 
   deleteMeal = meal => {
